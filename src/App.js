@@ -12,7 +12,7 @@ const todos = [
     userId: 1,
     id: 2,
     title: 'quis ut nam facilis et officia qui',
-    completed: false,
+    completed: true,
   },
   {
     userId: 1,
@@ -25,7 +25,15 @@ const todos = [
 function App() {
   return (
     <div className="App">
-      <Todo todo={todos[0]}></Todo>
+      <div className="todo-container">
+        {/*         <Todo item={todos[0]} />
+        <Todo item={todos[1]} />
+        <Todo item={todos[2]} /> */}
+
+        {todos.map((todo) => (
+          <Todo item={todo} />
+        ))}
+      </div>
     </div>
   );
 }

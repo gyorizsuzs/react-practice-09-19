@@ -1,12 +1,12 @@
 import './Todo.css';
+import TodoMetadata from './TodoMetadata';
 
-function Todo({ todo }) {
+function Todo({ item }) {
   return (
-    <div>
-      <h1>{todo.title}</h1>
-      <p>{todo.userId}</p>
-      <p>{todo.id}</p>
-      <p>{todo.completed.toString()}</p>
+    <div className="Todo">
+      <h1>{item.title}</h1>
+      <input type="checkbox" checked={item.completed} />
+      <TodoMetadata todoID={item.id} todoUserId={item.userId} />
     </div>
   );
 }

@@ -1,0 +1,15 @@
+.Todo {
+  margin: 10px;
+  width: 300px;
+  border: 2px solid coral;
+  background-color: antiquewhite;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+}
+
+.Todo h1 {
+  min-height: 50px;
+  background-color: goldenrod;
+  margin: 0;
+}
